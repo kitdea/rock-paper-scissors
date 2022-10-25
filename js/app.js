@@ -42,17 +42,17 @@ function playRound() {
   if(computerSelection === playerSelection) {
     result = 'Its a draw!';
   } else if (computerSelection === 'rock' && playerSelection === 'paper') {
-    result = 'You win!';
+    result = 'You win! Paper beats Rock!';
   } else if (computerSelection === 'rock' && playerSelection === 'scissor') {
-    result = 'You lose!';
+    result = 'You Lose! Rock beats Scissor!';
   } else if (computerSelection === 'paper' && playerSelection === 'scissor') {
-    result = 'You win!';
+    result = 'You win! Scissor beats Paper!';
   } else if (computerSelection === 'paper' && playerSelection === 'rock') {
-    result = 'You lose';
+    result = 'You lose! Paper beats Rock!';
   } else if (computerSelection === 'scissor' && playerSelection === 'rock') {
-    result = 'You win!';
+    result = 'You win! Rock beats Scissor!';
   } else if (computerSelection === 'scissor' && playerSelection === 'paper') {
-    result = 'You lose!';
+    result = 'You lose! Scissor beats Paper!';
   }
   resultDisplay.innerHTML = result;
 };
