@@ -18,7 +18,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   playerSelection = e.target.id
   userChoiceDisplay.innerHTML = playerSelection;
   getComputerChoice();
-  game();
+  playRound();
 }));
 
 function getComputerChoice() {
@@ -38,7 +38,7 @@ function getComputerChoice() {
   computerChoiceDisplay.innerHTML = computerSelection;
 }
 
-function game() {
+function playRound() {
   if(computerSelection === playerSelection) {
     result = 'Its a draw!';
   } else if (computerSelection === 'rock' && playerSelection === 'paper') {
